@@ -21,17 +21,19 @@
         }
 
         :root {
-            --primary-color: #6a11cb;
-            --secondary-color: #2575fc;
-            --accent-color: #ff0084;
+            /* Changed from blue/purple to red/orange/yellow */
+            --primary-color: #e63946; /* A vibrant red */
+            --secondary-color: #ffbe0b; /* A bright yellow/orange */
+            --accent-color: #fb5607; /* A strong orange */
             --text-color: #ffffff;
-            --button-bg: rgba(106, 17, 203, 0.7);
-            --button-hover: rgba(37, 117, 252, 0.8);
+            --button-bg: rgba(230, 57, 70, 0.7); /* Red with opacity */
+            --button-hover: rgba(255, 190, 11, 0.8); /* Yellow/orange with opacity */
         }
 
         body {
             font-family: 'Tajawal', sans-serif;
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            /* Changed background gradient to reflect new colors */
+            background: linear-gradient(135deg, #1c0a0a, #4a1e1e, #3e2424); /* Darker reds/browns for depth */
             color: var(--text-color);
             margin: 0;
             min-height: 100vh;
@@ -83,12 +85,12 @@
         }
 
         .card {
-            background: rgba(15, 12, 41, 0.8);
+            background: rgba(15, 12, 41, 0.8); /* Kept dark background for contrast */
             backdrop-filter: blur(15px);
             border-radius: 20px;
             padding: 2.5rem;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5),
-                        0 0 50px rgba(106, 17, 203, 0.3);
+                        0 0 50px rgba(230, 57, 70, 0.3); /* Shadow now red-tinted */
             border: 1px solid rgba(255, 255, 255, 0.1);
             position: relative;
             overflow: hidden;
@@ -100,14 +102,15 @@
             text-align: center;
             margin-bottom: 2.5rem;
             font-family: 'Orbitron', sans-serif;
-            background: linear-gradient(45deg, #ff0084, #6a11cb, #2575fc, #00ffd5);
+            /* Adjusted logo gradient to red/orange/yellow spectrum */
+            background: linear-gradient(45deg, #fb5607, #ff006e, #ffbe0b, #ffe81a);
             background-size: 300% 300%;
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
             text-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
             letter-spacing: 2px;
-            animation: 
+            animation:
                 gradientShift 8s ease infinite,
                 wave 3s ease-in-out infinite;
         }
@@ -190,7 +193,8 @@
         }
 
         .music-control {
-            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            /* Adjusted music control button gradient */
+            background: linear-gradient(45deg, #e63946, #fb5607);
             border: none;
             color: white;
             font-size: 1.5rem;
@@ -214,7 +218,7 @@
 
     <div class="container">
         <div class="card">
-            <div class="logo">BRIGHT LiNK</div>
+            <div class="logo">YAMEN LiNK</div>
 
             <div class="menu-grid">
                 <a href="https://t.me/ModsFD" class="menu-item">
